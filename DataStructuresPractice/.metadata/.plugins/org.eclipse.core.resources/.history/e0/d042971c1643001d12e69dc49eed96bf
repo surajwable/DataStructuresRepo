@@ -1,0 +1,13 @@
+package DQueue;
+
+public class Main {
+
+	Dqueue =new Dqueue();
+	
+	 q.InsertfromR(10);
+	 students.InsertfromR(20);
+	 students.InsertfromR(30);
+	 
+	 
+	 
+}

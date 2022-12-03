@@ -1,0 +1,50 @@
+package StackMenu;
+import java.util.*;
+
+import Stack.Stack;
+
+public class Testemployee {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		employee emp1=new employee();
+		employee emp2=new employee();
+		employee emp3=new employee();
+		employee emp4=new employee();
+		employee emp5=new employee();
+		
+		emp1.display();
+		System.out.println("Enter salary");
+		float sal=sc.nextFloat();
+		emp1.setSalary(sal);
+		
+		
+		System.out.println(emp1);
+		System.out.println("\nUpdated salary of emp1 is "+emp1.getSalary());
+		String s=sc.next();
+		int e=sc.nextInt();
+		float sal1=sc.nextFloat();
+		employee emp2=new employee(e,s,sal1);
+		emp2.display();
+	}
+		
+		public class Main {
+
+			public static void main(String[] args) {
+				Stack arr=new Stack();
+				arr.push(50);
+				arr.push(40);
+				arr.push(30);
+				arr.push(20);
+				arr.push(10);
+				arr.pop();
+				arr.pop();
+			
+				System.out.println(arr);
+			
+			}
+			
+		}
+}
+		

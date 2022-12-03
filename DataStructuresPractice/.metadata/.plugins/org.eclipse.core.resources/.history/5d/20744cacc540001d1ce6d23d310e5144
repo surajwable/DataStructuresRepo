@@ -1,0 +1,48 @@
+package StackMenu;
+
+public class Stack 
+{
+	static employee[]arr=new employee[5];
+
+	int top=-1;
+
+	public void push(employee value)        //push method
+	{
+		if(top+1<arr.length)
+		{
+			++top;
+			arr[top]=value;
+		}
+		else
+		{
+			System.out.println("stack overflow ! while pushing"+value);
+		}
+
+	}
+
+	public employee pop()                   //pop method
+	{
+		if(top>-1)
+		{
+			employee value=arr[top];
+			--top;
+			return value;
+		}
+		else
+		{
+			System.out.println("stack underflow...!");
+			//return null;	
+		}
+	}
+	public String toString()
+	{
+		String str="";
+		for(int i=top;i>=0;--i)
+		{
+			str=str+arr[i]+",";	
+		}
+		return str;
+	}
+
+	
+}

@@ -1,0 +1,112 @@
+package DQueue;
+
+public class Dqueue {
+
+	private int F;
+	private int R;
+	private int arr[];
+
+	public Dqueue() {
+		this(5);
+	}
+	public Dqueue(int size)    
+	{
+		arr=new int[size];
+		F=R=-1;
+	}
+
+	/*public void InsertfromF(int value)
+	{
+		if(F==-1)
+			F++;
+		if(F==0 && R==students.length-1)      //if (F=0 and R=4) or R+1=F
+
+		{
+			System.out.println("Full");          
+		}
+		else
+		{
+			int i=0;
+			while(i!=F)
+			{
+				students[i]=value;
+
+				if(F==-1)
+					F=F+1;
+			}
+
+		}
+
+	}*/
+
+	public void InsertfromR(int value)
+	{
+
+
+		if(F==-1)
+			F++;
+		if(F==0 && R==arr.length-1)      //if (F=0 and R=4) or R+1=F
+
+		{
+			System.out.println("Full");          
+		}
+		else
+		{
+			if(F==0 && R==arr.length-1) {
+				F=F-1;
+				int i=F;
+				while(i<R)
+				{
+					arr[i]=arr[i+1];
+					i++;
+				}
+				arr[R]=value;
+			}
+		
+			else 
+			{
+				R=R+1;
+				arr[R]=value;
+			}
+
+		}
+	}
+
+
+
+
+	public void RemoveFromF(int value)
+	{
+		if(F==0 && R==arr.length-1)      //if (F=0 and R=4) or R+1=F
+
+		{
+			System.out.println("Full");          
+		}
+		else
+		{
+			int i=F;
+			while(i!=R)
+			{
+				arr[i]=value;
+
+				if(R!=arr.length-1)
+					R=R+1;
+			}
+
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}

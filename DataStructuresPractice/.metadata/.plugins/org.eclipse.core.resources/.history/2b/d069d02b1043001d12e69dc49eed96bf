@@ -1,0 +1,115 @@
+package DQueue;
+
+public class Dqueue {
+
+	private int F;
+	private int R;
+	private int students[];
+
+	public Dqueue() {
+		this(5);
+	}
+	public Dqueue(int size)    
+	{
+		students=new int[size];
+		F=R=-1;
+	}
+
+	public void isEmpty()
+	{
+		if(F=R=-1)
+		{
+			System.out.println("the DQueue is empty");
+		}
+	}
+
+	public void isFull()
+	{
+		if(F==0 && R==(students.length-1))
+		{
+			System.out.println("the DQueue is Full");
+		}	
+	}
+
+	public void InsertfromF(int value)
+	{
+		if(F==0 && R==students.length-1)      //if (F=0 and R=4) or R+1=F
+				
+		{
+			System.out.println("Full");          
+		}
+		else
+		{
+			int i=0;
+			while(i!=F)
+				{
+				students[i]=value;
+				                  
+				if(F==-1)
+					F=F+1;
+			}
+			
+		}
+
+	}
+	
+	public void InsertfromR(int value)
+	{
+		if(F==0 && R==students.length-1)      //if (F=0 and R=4) or R+1=F
+				
+		{
+			System.out.println("Full");          
+		}
+		else
+		{
+			R=R+1;
+			for(int i=0;i==students.length-1;i++)
+			{
+				
+				students[i]=value;
+				
+			}
+			
+			}
+	
+			
+		}
+
+	}
+	
+	
+	public void RemoveFromF(int value)
+	{
+		if(F==0 && R==students.length-1)      //if (F=0 and R=4) or R+1=F
+				
+		{
+			System.out.println("Full");          
+		}
+		else
+		{
+			int i=F;
+			while(i!=R)
+				{
+				students[i]=value;
+				                  
+				if(R!=students.length-1)
+				R=R+1;
+			}
+	
+			
+		}
+
+	}
+	
+	
+	
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,29 @@
+package DQueue;
+
+public class DqueueMain {
+
+	public static void main(String[] args) 
+	{
+		Student akshay =new Student("akshay", 24, 'M');
+		Student Suraj =new Student("Suraj", 26, 'M');
+		Student akash =new Student("akash", 22, 'M');
+		Student Vaibhav =new Student("Vaibhav", 25, 'M');
+		Student Pritam =new Student("Pritam", 23, 'M');
+		
+		
+		Dqueue q =new Dqueue(5);
+		
+		
+		 q.InsertfromF(10);
+		 q.InsertfromF(20);
+		 q.InsertfromF(30);
+		 q.InsertfromF(40);
+		 q.InsertfromF(50);
+		 q.InsertfromF(60);
+		 System.out.println(q);
+		 q.RemoveFromF();
+		 q.RemoveFromF();
+		 System.out.println(q);
+	}
+
+}

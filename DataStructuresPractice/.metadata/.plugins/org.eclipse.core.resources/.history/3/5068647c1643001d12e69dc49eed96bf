@@ -1,0 +1,20 @@
+package DQueue;
+
+public class DqueueMain {
+
+	public static void main(String[] args) 
+	{
+		Dqueue q =new Dqueue();
+		
+		 q.InsertfromR(10);
+		 q.InsertfromR(20);
+		 q.InsertfromR(30);
+		 q.InsertfromR(40);
+		 q.InsertfromR(50);
+		 System.out.println(q);
+		 q.RemoveFromR();
+		 q.RemoveFromR();
+		 System.out.println(q);
+	}
+
+}

@@ -1,0 +1,58 @@
+package DQueue;
+
+public class Dqueue {
+	
+	private int F;
+	private int R;
+	private int students[];
+	
+	public Dqueue() {
+		this(5);
+	}
+	public Dqueue(int size)    
+	{
+		students=new int[size];
+		F=R=-1;
+		
+	}
+	
+	private void isEmpty()
+	{
+		if(F=R=-1)
+		{
+			System.out.println("the DQueue is empty");
+		}
+	}
+	
+	public void isFull()
+	{
+		if(F==0 && R==(students.length-1))
+		{
+			System.out.println("the DQueue is Full");
+		}	
+	}
+	
+	
+	public void InsertfromF()
+	{
+		if(F==0 && R==(students.length-1))
+		{
+			System.out.println("the DQueue is Full");
+			
+			else {
+				if(F=R=-1)
+				{
+					System.out.println(the DQueue is empty);
+				}
+			}
+		}
+	}
+
+  
+	
+	
+	
+		
+	
+
+}

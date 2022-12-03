@@ -1,0 +1,14 @@
+package StackMenu;
+
+public class MainStack {
+
+	public static void main(String[] args) {
+		employee e1=new employee();
+		employee e2=new employee();
+		employee e3=new employee();
+		employee e4=new employee();
+		employee e5=new employee();
+		
+	}
+
+}

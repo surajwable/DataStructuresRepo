@@ -1,0 +1,34 @@
+package DQueue;
+
+public class Dqueue {
+	
+	private int F;
+	private int R;
+	private int students[];
+	
+	public Dqueue() {
+		students= new int[5];
+		F=R=-1;
+
+	}
+	public Dqueue(int size)    
+	{
+		students=new int[size];
+		F=R=-1;
+	
+	
+	
+	public void InsertfromF()
+	{
+		
+		
+	}
+
+  
+	
+	
+	
+		
+	
+
+}

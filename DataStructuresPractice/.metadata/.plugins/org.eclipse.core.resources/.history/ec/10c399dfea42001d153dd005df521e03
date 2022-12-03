@@ -1,0 +1,9 @@
+package DQueue;
+
+public class Dqueue {
+	
+	private int F;
+	private int R;
+
+
+}
